@@ -1,0 +1,39 @@
+.errorMessage {
+    font-size: 11pt;
+    color:red;
+    text-align:right;
+
+}
+
+.rowColHeadings {
+    background-color: purple ; 
+    color : white ; 
+    font-size : 20px;
+    text-align: center ; 
+    padding : 10px ; 
+}
+
+.rowColInsides {
+    background-color: pink ; 
+    color : black ; 
+    font-size : 20px ; 
+    text-align: center;
+    padding : 10px;
+}
+
+h1 {
+    text-align: center ;
+    font-size: 75px;
+    color: #C90C7A;
+}
+
+#table {
+   text-align: left ;
+    font-size: 23px;
+    width: 400px ; 
+    margin: 0 auto ;
+    padding: 10px ; 
+    position : relative ; 
+    float : left ; 
+    border : 50px ; 
+}

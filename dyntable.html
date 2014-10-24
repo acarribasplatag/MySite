@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<!-- 
+     Dynamic Table
+     Professor: Jesse Heines 
+     Email: ana_arribasplata@student.uml.edu
+     Date: 10/20/2014
+     I got help from Disha Amin. 
+-->
+
+  <title>Multiplication Table</title>
+  <link hred="dyntable.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Dynamic Table</h1>
+  <form id="Form">
+    <tr>      
+      <td>Enter Row Starts:</td>
+      <td><input name="rStart" id="rStart" type="number" autocomplete="off"></td>
+      <td class="errorMessage" id="rStartError"</td>
+    </tr>	
+    <tr>
+      <td>Enter Row Ends:</td>
+      <td><input name="rEnd" type="number" id="rEnd" autocomplete="off"></td>
+      <td class="errorMessage" id="rEndError"></td>
+      <td class="errorMessage" id="rError"></td>
+    </tr>
+
+    <tr>
+      <td>Enter Column Starts:</td>
+      <td><input name="cStart" type="number" id="cStart" autocomplete="off"></td>
+      <td class="errorMessage" id="cStartError"></td>
+    </tr>
+    <tr>
+      <td>Enter Column Ends:</td>
+      <td><input name="cEnd" type="number" id="cEnd" autocomplete="off"></td>
+      <td class="errorMessage" id="cEndError"></td>
+      <td class="errorMessage" id="cError"></td>
+    </tr>
+    <tr>
+      <td class="button" colspan="3"><input type="button" id="submit" name="go" value="SUBMIT"></td>
+    </tr>
+  </form>
+  
+  <div id="dynTable">
+  </div>
+  <script src="dyntable.js"></script>
+</body>
+</html>
