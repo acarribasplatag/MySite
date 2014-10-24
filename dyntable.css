@@ -69,4 +69,10 @@ tr {
     padding : 10px;
 }
 
+/* I made the form into a table. This is so the table would be in the middle.*/
+#tableinput{
+    margin: 0 auto; 
+}
+
+
 

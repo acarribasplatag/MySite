@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 <!-- 
      Dynamic Table
      Professor: Jesse Heines 
@@ -11,49 +11,63 @@
 -->
 
   <title>Dynamic Table</title>
-  <link href="dyntable.css" rel="stylesheet" type="text/css">
+  <link href="dyntable.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-<!-- Title of the page, plus some instructions for the user. -->
-<h1>Dynamic Table</h1>
-<p>Enter four numbers then click on submit to process them</p>
+  <!-- Title of the page, plus some instructions for the user. -->
 
-<!-- A div which holds the form where the user will type the input. -->
-<div id="tableForm">
-  <form id="Form">
-    <tr>
-      <td>Enter Row Starts:</td>
-      <td><input name="rStart" id="rStart" type="number" autocomplete="off"></td>
-      <td id="r1Error"> </td>
-    </tr>
+  <h1>Dynamic Table</h1>
 
-    <tr>
-      <td>Enter Row Ends:</td>
-      <td><input name="rEnd" type="number" id="rEnd" autocomplete="off"></td>
-      <td id="r2Error"></td>
-    </tr>
+  <p>Enter four numbers then click on submit to process them</p>
+  <!-- A div which holds the form where the user will type the input. -->
 
-    <tr>
-      <td>Enter Column Starts:</td>
-      <td><input name="cStart" type="number" id="cStart" autocomplete="off"></td>
-      <td id="c1Error"></td>
-    </tr>
+  <div id="tableForm">
+    <form id="Form">
+      <table id="tableinput">
+        <tr>
+          <td>Enter Row Starts:</td>
 
-    <tr>
-      <td>Enter Column Ends:</td>
-      <td><input name="cEnd" type="number" id="cEnd" autocomplete="off"></td>
-      <td id="c2Error"></td>
-    </tr>
-    <br>
-    <tr>
-      <td class="button" colspan="3" ><input type="button" id="submit" name="go" value="SUBMIT"></td>
-    </tr>
-  </form>
-</div>  
-  <!-- div which will hold the table -->
+          <td><input name="rStart" id="rStart" type="number" autocomplete="off" /></td>
+
+          <td id="r1Error"></td>
+        </tr>
+
+        <tr>
+          <td>Enter Row Ends:</td>
+
+          <td><input name="rEnd" type="number" id="rEnd" autocomplete="off" /></td>
+
+          <td id="r2Error"></td>
+        </tr>
+
+        <tr>
+          <td>Enter Column Starts:</td>
+
+          <td><input name="cStart" type="number" id="cStart" autocomplete="off" /></td>
+
+          <td id="c1Error"></td>
+        </tr>
+
+        <tr>
+          <td>Enter Column Ends:</td>
+
+          <td><input name="cEnd" type="number" id="cEnd" autocomplete="off" /></td>
+
+          <td id="c2Error"></td>
+        </tr>
+
+        <tr>
+          <td class="button" colspan="3"><input type="button" id="submit" name="go"
+          value="SUBMIT" /></td>
+        </tr>
+      </table>
+    </form>
+  </div><!-- div which will hold the table -->
+
   <div id="dynTable">
     <!-- Link to my javaScript file. -->
-     <script src="dyntable.js"></script>
+    <script src="dyntable.js" type="text/javascript"></script>
   </div>
 </body>
 </html>
