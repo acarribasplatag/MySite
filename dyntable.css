@@ -1,11 +1,58 @@
-.errorMessage {
-    font-size: 11pt;
-    color:red;
-    text-align:right;
+/*
+  Ana Arribasplata
+  Dynamic Tables
+  10/23/2014
+  ana_arribasplata@student.uml.edu
+*/
 
+
+/* Title of the page.*/
+h1 {
+    text-align: center;
+    font-size:75px;
+    color: #C90C7A;
 }
 
-.rowColHeadings {
+/* Instructions for the table. */
+p {
+    text-align: center ;
+    color: white ; 
+    background-color: background; 
+}
+
+
+/* Div that holds where the user will write the input for the table. */
+#tableForm {
+    text-align: center ;
+    font-size: 23px;
+    width: 100% ; 
+    margin: 0 auto ;
+    padding: 10px ; 
+    position : relative ; 
+    float : left ; 
+}
+
+/* Styles of the table. */
+#Table {
+    text-align: left ;
+    font-size: 23px;
+    margin: 0 auto; 
+    padding: 20px ; 
+    position : relative ; 
+    border : 50px ;
+}
+
+/* Make the submit button a little bit bigger. */
+#submit{
+    margin-top: 20px; 
+    width: 175px;
+    height: 50px;
+    font-size: 100%;
+    color:  #C90C7A;
+}
+
+/* Still styles of the table. First row, first column. */
+#Table tr:first-child td, #Table td:first-child {
     background-color: purple ; 
     color : white ; 
     font-size : 20px;
@@ -13,7 +60,8 @@
     padding : 10px ; 
 }
 
-.rowColInsides {
+/* The row * column part of the table. */
+tr {
     background-color: pink ; 
     color : black ; 
     font-size : 20px ; 
@@ -21,19 +69,4 @@
     padding : 10px;
 }
 
-h1 {
-    text-align: center ;
-    font-size: 75px;
-    color: #C90C7A;
-}
 
-#table {
-   text-align: left ;
-    font-size: 23px;
-    width: 400px ; 
-    margin: 0 auto ;
-    padding: 10px ; 
-    position : relative ; 
-    float : left ; 
-    border : 50px ; 
-}

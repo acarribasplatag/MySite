@@ -22,12 +22,10 @@ form.go.onclick = function () {
     var cStart = parseInt(form.cStart.value);
     var cEnd = parseInt(form.cEnd.value);
 
-    // Error checking. 
     if (errorCheck(rStart, rEnd, cStart, cEnd) === false) {
-	return ; 
+	return  ; 
     }
-    
-    
+
     // This will give us the size, and on what number the rows and columns will start.
     var rows = rEnd - rStart + 1;
     var cols = cEnd - cStart + 1;
@@ -70,87 +68,89 @@ form.go.onclick = function () {
 
  }
 
+
+
 function errorCheck(rStart, rEnd, cStart, cEnd) {
+
+
     var error1, error2, error3, error4, error5, error6; 
+    
+    
    
     if (rStart === ""){
 	error1 = true ; 
-	alert("Field is empty. Enter a number.");
+	alert("Row Starts is empty. Enter a number.");
     }  
     else if (rStart % 1 === 0) {
 	error1 = false ;
     } else {
 	error1 = true;
-	alert("Input is not a number. Enter a number.");
+	alert("Row Starts is not a number. Enter a number.");
     }
    
     // Check the end of the row.
     if (rEnd === "") {
         error2 = true ;
-        alert("Field is empty. Enter a number.");
+        alert("Row Ends is empty. Enter a number.");
     }
     else if (rEnd % 1 === 0) {
         error2 = false ;
-        
     } else {
         error2 = true;
-        alert("Input is not a number. Enter a number.");
+        alert("Row Ends is not a number. Enter a number.");
     }
     
     // Ckeck the start of the column. 
     if (cStart === ""){
         error3 = true ;
-        alert("Field is empty. Enter a number.");
+        alert("Column Starts is empty. Enter a number.");
     }
     else if (cStart % 1 === 0) {
         error3 = false ;
-        alert("");
     } else {
         error3 = true;
-        alert("Input is not a number. Enter a number.");
+        alert("Column Starts is not a number. Enter a number.");
     }
     
     // Check the end of the column. 
     if (cEnd === ""){
         error4 = true ;
-        alert("Field is empty. Enter a number.");
+        alert("Column Ends is empty. Enter a number.");
     }
     else if (cEnd % 1 === 0) {
         error3 = false ;
         
     } else {
         error3 = true;
-        alert("Input is not a number. Enter a number.");
+        alert("Column Ends is not a number. Enter a number.");
     }
 
     // Check if the first value of the row is greater than the last value of the row. 
 
-   if (rStart % 1 === 0 && rEnd % 1 === 0) {
+    if (rStart % 1 === 0 && rEnd % 1 === 0) {
        if (rStart > rEnd) {
 	      error5 = true ; 
 	      alert("Value can not be smaller than the row number. Enter a bigger number.") ;
        } else {
 	      error5 = false ; 
-	      alert("") ; 
        }
    }
 
    // Check if the firt value of the column is greater than the last value of the column. 
 
-    if (cStart % 1 === 0 && cEnd % 1 === 0) {
+    //if (cStart % 1 === 0 && cEnd % 1 === 0) {
 	if (cStart > cEnd) {
 	        error6 = true ; 
 	        alert("Value can not be smaller than the column number. Enter a bigger number.");
 	    } else {
 		    error6 = false ; 
-		    alert("") ; 
-		}
-    }
+	    }
+    //}
 
-    // Check if there is no errors.
-    if (error1 || error2 || error3 || error4 || error5 || error6 === true) {
+  // Check if there is no errors.
+   if (error1 || error2 || error3 || error4 || error5 || error6 === true) {
 	return false; 
-    } else {
+  } else {
 	return true ; 
     }
 }
