@@ -7,9 +7,9 @@
  */
 
 /* 
-   I got some of this code from my homework I did last year. 
+   I got some of this code from the homework I did last year. 
    I made major changes because the one I did last year does not work.
-   Also, Disha helped me because she got help from people at her work. 
+   Also, Disha helped me a little bit. She got help from people at her work. 
 */
 
 var form = document.getElementById("Form");
@@ -76,7 +76,7 @@ function errorCheck(rStart, rEnd, cStart, cEnd) {
     var error1, error2, error3, error4, error5, error6; 
     
     
-   
+   // Check the start of the row. 
     if (rStart === ""){
 	error1 = true ; 
 	alert("Row Starts is empty. Enter a number.");
@@ -138,16 +138,16 @@ function errorCheck(rStart, rEnd, cStart, cEnd) {
 
    // Check if the firt value of the column is greater than the last value of the column. 
 
-    //if (cStart % 1 === 0 && cEnd % 1 === 0) {
+    if (cStart % 1 === 0 && cEnd % 1 === 0) {
 	if (cStart > cEnd) {
 	        error6 = true ; 
 	        alert("Value can not be smaller than the column number. Enter a bigger number.");
 	    } else {
 		    error6 = false ; 
 	    }
-    //}
+    }
 
-  // Check if there is no errors.
+  // Check if there is no errors and return.
    if (error1 || error2 || error3 || error4 || error5 || error6 === true) {
 	return false; 
   } else {
