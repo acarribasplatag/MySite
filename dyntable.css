@@ -7,6 +7,7 @@
 
 
 /* Title of the page.*/
+
 h1 {
     text-align: center;
     font-size:75px;
@@ -17,7 +18,7 @@ h1 {
 p {
     text-align: center ;
     color: white ; 
-    background-color: background; 
+    background-color: #6A5ACD; 
 }
 
 
@@ -25,11 +26,9 @@ p {
 #tableForm {
     text-align: center ;
     font-size: 23px;
-    width: 100% ; 
     margin: 0 auto ;
     padding: 10px ; 
     position : relative ; 
-    float : left ; 
 }
 
 /* Styles of the table. */
@@ -44,8 +43,7 @@ p {
 
 /* Make the submit button a little bit bigger. */
 #submit{
-    margin-top: 20px; 
-    width: 175px;
+    margin-top: 5px; 
     height: 50px;
     font-size: 100%;
     color:  #C90C7A;
@@ -75,4 +73,6 @@ tr {
 }
 
 
-
+#tableinput td, #tableinput tr {
+    padding:2px; 
+}
