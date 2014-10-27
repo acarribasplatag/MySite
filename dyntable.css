@@ -1,0 +1,92 @@
+/*
+  Ana Arribasplata
+  Dynamic Tables
+  10/23/2014
+  ana_arribasplata@student.uml.edu
+*/
+
+
+/* Title of the page.*/
+
+h1 {
+    text-align: center;
+    font-size:75px;
+    color: #C90C7A;
+}
+
+/* Instructions for the table. */
+p {
+    text-align: center ;
+    color: white ; 
+    background-color: #6A5ACD; 
+}
+
+
+/* Div that holds where the user will write the input for the table. */
+#tableForm {
+    text-align: center ;
+    font-size: 23px;
+    margin: 0 auto ;
+    padding: 10px ; 
+    position : relative ; 
+}
+
+/* Styles of the table. */
+#Table {
+    text-align: left ;
+    font-size: 23px;
+    margin: 0 auto; 
+    padding: 20px ; 
+    position : relative ; 
+}
+
+
+/* Make the submit button a little bit bigger. */
+#submit{
+    margin-top: 5px; 
+    height: 50px;
+    font-size: 100%;
+    color:  #C90C7A;
+}
+
+/* Still styles of the table. First row, first column. */
+#Table tr:first-child td, #Table td:first-child {
+    background-color: purple ; 
+    color : white ; 
+    font-size : 20px;
+    text-align: center ; 
+    padding : 10px ; 
+}
+
+/* The row * column part of the table. */
+tr {
+    background-color: pink ; 
+    color : black ; 
+    font-size : 20px ; 
+    text-align: center;
+}
+
+
+
+/* I made the form into a table. This is so the table would be in the middle.*/
+#tableinput{
+    margin: 0 auto; 
+    border: 1px solid pink; 
+    border-collapse: collapse;
+}
+
+
+#tableinput td, #tableinput tr {
+    padding:2px; 
+    border: 1px solid pink; 
+    border-collapse: collapse; 
+}
+
+/* Style of the error checking. */
+.errorClass{
+    color: red; 
+    background-color: pink; 
+}
+
+
+
