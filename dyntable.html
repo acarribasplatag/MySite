@@ -19,7 +19,7 @@
   <!-- Title of the page, plus some instructions for the user. -->
 
   <h1>Dynamic Table</h1>
-
+  
   <p>Enter four numbers then click on submit to process them</p>
   <!-- A div which holds the form where the user will type the input. -->
 
@@ -33,25 +33,25 @@
 	  -->
 	<tr>
 	  <td>Enter Row Starts:</td>
-	  <td><input name="rStart" id="rStart"/></td>
+	  <td><input name="rStart" id="rStart" onchange="changeFunc()"/></td>
 	  <td class="errorClass" id="rStartError"></td>
         </tr>
 
         <tr>
           <td>Enter Row Ends:</td>
-          <td><input name="rEnd" id="rEnd"/></td>
+          <td><input name="rEnd" id="rEnd" onchange="changeFunc()" /></td>
 	  <td class="errorClass" id="rEndError"></td>
         </tr>
 	
         <tr>
 	  <td>Enter Column Starts:</td>
-          <td><input name="cStart" id="cStart"/></td>
+          <td><input name="cStart" id="cStart" onchange="changeFunc()"/></td>
 	  <td class="errorClass" id="cStartError"></td>
         </tr>
 	
         <tr>
           <td>Enter Column Ends:</td>
-          <td><input name="cEnd" id="cEnd"/></td>
+          <td><input name="cEnd" id="cEnd" onchange="changeFunc()"/></td>
 	  <td class="errorClass" id="cEndError"></td>
         </tr>
 	
@@ -64,8 +64,8 @@
   </div>
   <!-- div which will hold the table -->
   <div id="dynTable">
-    <!-- Link to my javaScript file. -->
-    <script src="dyntable.js" type="text/javascript"></script>
   </div>
+  <!-- Link to my javaScript file. -->
+  <script src="dyntable.js"></script>
 </body>
 </html>
