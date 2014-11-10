@@ -1,0 +1,66 @@
+/**************************************************************/
+/* Ana Arribasplata                                           */
+/* ana_arribasplata@student.uml.edu                           */
+/* Homework 7.                                                */
+/* Creating a Single-Page Navigation Interface                */
+/**************************************************************/
+
+
+/* Sets the color of the body. */
+body{
+    background-color: #FFFFCC;
+}
+
+/* Put everything on a rectangle. */
+#everything{
+    width: 700px; 
+    margin: 12px auto;  
+    border-style: solid; 
+    border-width: 6px; 
+    border-radius: 25px; 
+    background-color: #FFFFFF  ;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 28px;
+    position: relative; 
+}
+
+/* Style the navigation bar links.  */ 
+
+#navbar{
+    margin-top: 10px;
+}
+
+#navbar a {
+    font-size: 1.5em;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 8px 0px 8px;
+    color: #FF0033;
+    text-decoration: none;
+    border: 2px solid;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+/* Give the user an affordance that each link is clickable. */
+#navbar a:hover {
+    color: #FF0099;
+}
+
+/* Style the active page link. */
+#navbar a.active{
+    border-color: #330066;
+}
+
+/* Style the poem to break after each line. */
+p.poem{
+    white-space: pre-line; 
+}
+
+/* This is used on meaning.html */
+p.text{
+    text-align: justify; 
+    text-justify: inter-word; 
+    padding: 0px 15px 0px 15px; 
+}
+
